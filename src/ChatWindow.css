@@ -1,0 +1,199 @@
+html, body, #root {
+  width: 100%;
+  height: 100%;
+}
+
+.ChatRoom {
+  width: 100%;
+  height: 100%;
+}
+
+.SplitPane {
+  width: 100%;
+  height: 100%;
+}
+
+.SplitPane-left {
+  float: left;
+  width: 20%;
+  height: 100%;
+}
+
+.SplitPane-right {
+  float: left;
+  width: 80%;
+  height: 100%;
+}
+
+/*The left-handside user list*/
+.userList {
+  width: 100%;
+  height: 100%;
+  background: whitesmoke;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 0.5px solid;
+  border-radius: 4px;
+  opacity: 0.8;
+}
+
+/*The right-handside chat window*/
+.ChatWindow {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  box-sizing: border-box;
+  border: 0.5px solid;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*font-size: calc(10px + 2vmin);*/
+}
+
+/*chat message area*/
+.Chat {
+  width: 100%;
+  height: 80%;
+  box-sizing: border-box;
+  border: 0.5px solid;
+  border-radius: 4px;
+  overflow-wrap: break-word;
+  overflow: auto;
+  display: flex;
+  /*flex-direction: column-reverse*/;
+  flex-direction: column;
+}
+
+/*chat input area*/
+.ChatInput {
+  width: 100%;
+  height: 20%;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+/*input[type='text'] {
+  width: 100%;
+  height:  60px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}*/
+
+.textarea {
+  width: 100%;
+  height: 70px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
+.textarea-highlight {
+  width: 100%;
+  height: 70px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+  border-color: cornflowerblue;
+}
+
+input[type='submit'] {
+  width: 15%;
+  /*background-color: #4CAF50;*/
+  background-color: lightgrey;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+input[type='submit']:hover {
+  background-color: lightslategrey;
+  /*background-color: #45a049;*/
+}
+
+ul {
+  list-style-type: none;
+}
+
+li{
+    margin: 10px;
+
+}
+
+/*image!!!!!!!!!*/
+.preview {
+  height: 100px;
+  width: 100px;
+}
+
+/* dangerouslySetInnerHTML will render html as if it were a child of your your div */
+.msgcontainer > img {
+  height: 100px;
+  width: 100px;
+}
+/*image!!!!!!!!!*/
+
+
+.imgBtnArea {
+  float: right;
+  top: 5px;
+  right: 5px;
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 10px;
+
+
+  height: 32px;
+  width: 100px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  /*Using a background color, but you can use a background image to represent a button*/
+  background-color: lightgrey;
+}
+
+.fileInput {
+  cursor: pointer;
+  height: 100%;
+  position:absolute;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  /*This makes the button huge. If you want a bigger button, increase the font size*/
+  font-size:80px;
+  /*Opacity settings for all browsers*/
+  opacity: 0;
+  -moz-opacity: 0;
+  /*filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);*/
+}
+
+/*Dynamic styles*/
+.imgBtnArea:hover {
+  background-color: lightslategrey;
+}
+
+/*not working?????????????*/
+.imgBtnArea:clicked {
+  background-color: #A66;
+}
+
