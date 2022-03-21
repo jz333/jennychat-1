@@ -5,11 +5,6 @@ import './index.css';
 import Main from './Main';
 import reportWebVitals from './reportWebVitals';
 
-import Amplify from 'aws-amplify';
-import config from './aws-exports';
-Amplify.configure(config);
-
-
 
 
 ReactDOM.render(
